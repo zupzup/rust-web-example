@@ -1,7 +1,7 @@
 extern crate slog_async;
 extern crate slog_term;
 
-use slog::Drain;
+use slog::{Drain, o};
 
 pub fn setup_logging() -> slog::Logger {
     let decorator = slog_term::TermDecorator::new().build();
